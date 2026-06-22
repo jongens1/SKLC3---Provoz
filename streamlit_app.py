@@ -21,7 +21,7 @@ with tab_report:
     with st.form("reporting_form", clear_on_submit=True):
         kategoria = st.selectbox(
             "O aký problém ide?",
-            ["Internet / Sieť", "Pokladňa", "Osvetlenie / Budova", "Čistota", "Iné (všeobecné)"]
+            ["Autostore","Práva/Access", "Odbáčanie na zjazdy/stanice/Turning to shipping lanes/stations", "Vytvorenie lokácií/New locations", "Chyby aktivácie/Activation error", "Neprepisovanie stavov/Job states stucked","Iné/Others"]
         )
         nadpis = st.text_input("Stručný popis (napr. Nejde skener)")
         detail = st.text_area("Detailnejšie informácie")
