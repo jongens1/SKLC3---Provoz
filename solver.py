@@ -13,9 +13,11 @@ st.set_page_config(page_title="Solver Admin", layout="wide")
 
 # --- HLAVIČKA A REFRESH ---
 col_t, col_r = st.columns([4, 1])
-with col_t: st.title("🛠 Solver Dashboard")
-with col_refresh: 
-    if st.button("🔄 Refresh"): st.rerun()
+with col_t: 
+    st.title("🛠 Solver Dashboard")
+with col_r: 
+    if st.button("🔄 Refresh"): 
+        st.rerun()
 
 # --- LOGIN SYSTÉM ---
 password = st.text_input("Zadaj svoje osobné heslo", type="password")
