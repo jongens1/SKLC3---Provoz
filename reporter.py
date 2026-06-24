@@ -61,6 +61,7 @@ with tab1:
                 repo.create_issue(title=f"[{kategoria}] {nadpis}", body=body)
                 st.cache_data.clear()
                 st.success("✅ Nahlásené!")
+                st.balloons()
             except Exception as e:
                 st.error(f"Chyba: {e}")
 
