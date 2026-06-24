@@ -14,7 +14,7 @@ st.set_page_config(page_title="Hlásenie Issue", layout="centered")
 # --- HLAVIČKA S REFRESH TLAČIDLOM ---
 col_title, col_refresh = st.columns([4, 1])
 with col_title:
-    st.title("Issue Systém")
+    st.title("Reporting Proces")
 with col_refresh:
     if st.button("🔄 Refresh"):
         st.rerun()
